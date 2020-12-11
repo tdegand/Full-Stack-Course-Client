@@ -9,7 +9,7 @@ function Courses() {
 	//Gets all courses and displays them
 	useEffect(() => {
 		axios
-			.get(`http://localhost:5000/api/courses`)
+			.get(`https://full-stack-course-api.herokuapp.com/api/courses`)
 			.then((course) => setCourse(course.data.courses))
 			.catch((error) => {
 				console.log(error);
